@@ -4,7 +4,7 @@ function cargarPreguntas() {
     const quizContainer = document.getElementById("quiz");
     quizContainer.innerHTML = ""; // Limpia el contenedor
 
-    fetch('data.xml')
+    fetch('test-02/data.xml')
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
