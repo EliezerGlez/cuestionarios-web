@@ -99,8 +99,11 @@ function actualizarBotones() {
     const btnSiguiente = document.getElementById("btn-siguiente");
     const btnAnterior = document.getElementById("btn-anterior");
 
-    btnSiguiente.style.display = preguntaActual === preguntas.length - 1 ? "none" : "inline-block";
-    btnAnterior.style.display = preguntaActual === 0 ? "none" : "inline-block";
+    // Solo actualizar los botones si existen
+    if (btnSiguiente && btnAnterior) {
+        btnSiguiente.style.display = preguntaActual === preguntas.length - 1 ? "none" : "inline-block";
+        btnAnterior.style.display = preguntaActual === 0 ? "none" : "inline-block";
+    }
 }
 
 // Función para ir a la siguiente pregunta
