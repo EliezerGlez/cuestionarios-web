@@ -1,29 +1,60 @@
 /* Estilos generales del cuerpo */
 body {
     font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4; /* Fondo más suave */
 }
 
 /* Estilos para cada contenedor de pregunta */
 .pregunta-container {
     margin-bottom: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
+    background: #fff; /* Fondo blanco para preguntas */
     padding: 15px;
-    background-color: #f9f9f9;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 /* Estilos para los títulos de las preguntas */
 h2 {
     font-size: 18px;
+    color: #333; /* Color más oscuro para mejor legibilidad */
+}
+
+/* Elimina el estilo de lista para las opciones */
+.opciones {
+    list-style: none;
+    padding: 0;
 }
 
 /* Espaciado entre las opciones */
 .opciones li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+/* Estilos del botón */
+.btn {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el mouse */
 }
 
 /* Estilo para mostrar el resultado */
 .resultado {
     font-weight: bold;
     margin-top: 20px;
+    color: #333; /* Color oscuro para mejor legibilidad */
+}
+
+/* Estilos para los botones de navegación */
+.navigation {
+    margin: 20px 0; /* Espaciado alrededor de la navegación */
 }
