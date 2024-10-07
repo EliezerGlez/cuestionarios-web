@@ -6,21 +6,17 @@
     <title>Cuestionario Aleatorio</title>
     <!-- Referencia al archivo CSS -->
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- Referencia a Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
-    <div class="container mt-5">
-        <h1 class="text-center">Cuestionario Aleatorio</h1>
-        <div id="quiz" class="mt-4"></div>
-        <button class="btn btn-primary mt-3" onclick="checkAnswers()">Enviar Respuestas</button>
-        <div id="resultado" class="resultado mt-3"></div>
+    <h1>Cuestionario Aleatorio</h1>
+    <div id="quiz"></div>
+    <div class="navigation">
+        <button id="btn-anterior" class="btn" style="display: none;" onclick="anteriorPregunta()">Anterior</button>
+        <button id="btn-siguiente" class="btn" style="display: inline-block;" onclick="siguientePregunta()">Siguiente</button>
     </div>
-    <button id="btn-anterior" class="btn" style="display: none;" onclick="anteriorPregunta()">Anterior</button>
-<button id="btn-siguiente" class="btn" style="display: inline-block;" onclick="siguientePregunta()">Siguiente</button>
-<button class="btn" onclick="checkAnswers()">Enviar Respuestas</button>
-
+    <button class="btn" onclick="checkAnswers()">Enviar Respuestas</button>
+    <div id="resultado" class="resultado"></div>
 
     <!-- Referencia al archivo JavaScript -->
     <script src="js/main.js"></script>
