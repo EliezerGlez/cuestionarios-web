@@ -1,6 +1,7 @@
 // main.js
 
 let preguntas = []; // Variable global para almacenar las preguntas
+let preguntaActual = 0; // Variable para rastrear la pregunta actual
 
 // Función para mezclar (aleatorizar) un array
 function shuffle(array) {
@@ -39,9 +40,9 @@ function cargarPreguntas() {
                 correcta: cuestionario.getElementsByTagName("correcta")[0].textContent
             }));
 
-            // Mezclar las preguntas y cargar en el DOM
+            // Mezclar las preguntas y mostrar la primera
             shuffle(preguntas);
-            mostrarPreguntas(quizContainer);
+            mostrarPregunta(preguntaActual);
             resultadoDiv.textContent = ""; // Limpiar el mensaje de carga
         })
         .catch(error => {
@@ -50,44 +51,72 @@ function cargarPreguntas() {
         });
 }
 
-// Función para mostrar preguntas en el DOM
-function mostrarPreguntas(quizContainer) {
+// Función para mostrar la pregunta actual en el DOM
+function mostrarPregunta(index) {
+    const quizContainer = document.getElementById("quiz");
     quizContainer.innerHTML = ""; // Limpiar el contenedor
 
-    preguntas.forEach((pregunta, index) => {
-        const preguntaDiv = document.createElement("div");
-        preguntaDiv.classList.add("pregunta-container");
+    const pregunta = preguntas[index];
+    const preguntaDiv = document.createElement("div");
+    preguntaDiv.classList.add("pregunta-container");
 
-        const titulo = document.createElement("h2");
-        titulo.textContent = `${index + 1}. ${pregunta.titulo}`;
-        preguntaDiv.appendChild(titulo);
+    const titulo = document.createElement("h2");
+    titulo.textContent = `${index + 1}. ${pregunta.titulo}`;
+    preguntaDiv.appendChild(titulo);
 
-        const opcionesList = document.createElement("ul");
-        opcionesList.classList.add("opciones");
+    const opcionesList = document.createElement("ul");
+    opcionesList.classList.add("opciones");
 
-        const opciones = [...pregunta.opciones];
-        shuffle(opciones);
-        
-        opciones.forEach(opcion => {
-            const li = document.createElement("li");
-            const input = document.createElement("input");
-            input.type = "radio";
-            input.name = `pregunta-${index}`;
-            input.value = opcion.id;
-            input.id = `pregunta-${index}-${opcion.id}`;
+    const opciones = [...pregunta.opciones];
+    shuffle(opciones);
+    
+    opciones.forEach(opcion => {
+        const li = document.createElement("li");
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.name = `pregunta-${index}`;
+        input.value = opcion.id;
+        input.id = `pregunta-${index}-${opcion.id}`;
 
-            const label = document.createElement("label");
-            label.htmlFor = input.id;
-            label.textContent = opcion.texto;
+        const label = document.createElement("label");
+        label.htmlFor = input.id;
+        label.textContent = opcion.texto;
 
-            li.appendChild(input);
-            li.appendChild(label);
-            opcionesList.appendChild(li);
-        });
-
-        preguntaDiv.appendChild(opcionesList);
-        quizContainer.appendChild(preguntaDiv);
+        li.appendChild(input);
+        li.appendChild(label);
+        opcionesList.appendChild(li);
     });
+
+    preguntaDiv.appendChild(opcionesList);
+    quizContainer.appendChild(preguntaDiv);
+
+    // Actualizar botones de navegación
+    actualizarBotones();
+}
+
+// Función para actualizar la visibilidad de los botones
+function actualizarBotones() {
+    const btnSiguiente = document.getElementById("btn-siguiente");
+    const btnAnterior = document.getElementById("btn-anterior");
+
+    btnSiguiente.style.display = preguntaActual === preguntas.length - 1 ? "none" : "inline-block";
+    btnAnterior.style.display = preguntaActual === 0 ? "none" : "inline-block";
+}
+
+// Función para ir a la siguiente pregunta
+function siguientePregunta() {
+    if (preguntaActual < preguntas.length - 1) {
+        preguntaActual++;
+        mostrarPregunta(preguntaActual);
+    }
+}
+
+// Función para ir a la pregunta anterior
+function anteriorPregunta() {
+    if (preguntaActual > 0) {
+        preguntaActual--;
+        mostrarPregunta(preguntaActual);
+    }
 }
 
 // Función para verificar las respuestas seleccionadas
