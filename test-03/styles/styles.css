@@ -14,8 +14,14 @@ body {
 }
 
 /* Estilos para los títulos de las preguntas */
+h1 {
+    font-size: 26px; /* Ajusta el tamaño del título principal */
+    text-align: center; /* Centra el título */
+}
+
 h2 {
-    font-size: 18px;
+    font-size: 20px; /* Ajusta el tamaño de los títulos de las preguntas */
+    margin-bottom: 10px; /* Espacio entre el título y las opciones */
 }
 
 /* Espaciado entre las opciones */
@@ -30,7 +36,7 @@ h2 {
 
 /* Oculta el radio button */
 .opciones li input[type="radio"] {
-    display: none;
+    display: none; /* Oculta el radio button */
 }
 
 /* Estilos para el texto de las opciones */
@@ -39,6 +45,7 @@ h2 {
     padding: 10px; /* Añade un poco de espaciado para que sea más fácil de tocar */
     border: 1px solid transparent; /* Por defecto, no hay borde */
     transition: background-color 0.3s; /* Añade transición para el fondo */
+    font-size: 18px; /* Ajusta el tamaño de la fuente de las opciones */
 }
 
 /* Cambia el fondo al pasar el ratón */
@@ -56,16 +63,17 @@ h2 {
 .resultado {
     font-weight: bold;
     margin-top: 20px;
+    font-size: 18px; /* Tamaño de fuente ajustado para el resultado */
 }
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 576px) {
     h1 {
-        font-size: 24px; /* Ajusta el tamaño del título para móviles */
+        font-size: 24px; /* Tamaño del título principal para móviles */
     }
 
     h2 {
-        font-size: 16px; /* Ajusta el tamaño de los títulos de preguntas para móviles */
+        font-size: 18px; /* Tamaño de los títulos de preguntas para móviles */
     }
 
     .pregunta-container {
@@ -74,6 +82,10 @@ h2 {
 
     .opciones li {
         margin-bottom: 8px; /* Menor margen entre las opciones */
+    }
+
+    .opciones li label {
+        font-size: 16px; /* Tamaño de fuente ajustado para opciones en móviles */
     }
 
     .resultado {
