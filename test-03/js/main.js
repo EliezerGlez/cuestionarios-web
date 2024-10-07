@@ -1,6 +1,24 @@
-// Función para cargar preguntas desde un archivo XML
+// main.js
+
+let preguntas = []; // Variable global para almacenar las preguntas
+
+// Función para mezclar (aleatorizar) un array
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+// Función para cargar preguntas desde el archivo XML
 function cargarPreguntas() {
-    fetch('data.xml') // Asegúrate de que la ruta sea correcta
+    const quizContainer = document.getElementById("quiz");
+    const resultadoDiv = document.getElementById("resultado");
+
+    // Mostrar un mensaje de carga
+    resultadoDiv.textContent = "Cargando preguntas...";
+
+    fetch('data.xml')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error al cargar el archivo XML');
@@ -8,35 +26,33 @@ function cargarPreguntas() {
             return response.text();
         })
         .then(data => {
-            const preguntas = parseXML(data);
-            mostrarPreguntas(preguntas);
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(data, "application/xml");
+            const cuestionarios = xmlDoc.getElementsByTagName("cuestionario");
+
+            preguntas = Array.from(cuestionarios).map(cuestionario => ({
+                titulo: cuestionario.getElementsByTagName("titulo")[0].textContent,
+                opciones: Array.from(cuestionario.getElementsByTagName("opcion")).map(opcion => ({
+                    texto: opcion.textContent,
+                    id: opcion.getAttribute("id")
+                })),
+                correcta: cuestionario.getElementsByTagName("correcta")[0].textContent
+            }));
+
+            // Mezclar las preguntas y cargar en el DOM
+            shuffle(preguntas);
+            mostrarPreguntas(quizContainer);
+            resultadoDiv.textContent = ""; // Limpiar el mensaje de carga
         })
         .catch(error => {
             console.error("Error al cargar el archivo XML:", error);
+            resultadoDiv.textContent = "Error al cargar las preguntas.";
         });
 }
 
-// Función para analizar el XML y extraer preguntas
-function parseXML(data) {
-    const parser = new DOMParser();
-    const xmlDoc = parser.parseFromString(data, "application/xml");
-    const cuestionarios = xmlDoc.getElementsByTagName("cuestionario");
-
-    return Array.from(cuestionarios).map(cuestionario => ({
-        titulo: cuestionario.getElementsByTagName("titulo")[0].textContent,
-        opciones: Array.from(cuestionario.getElementsByTagName("opcion")).map(opcion => ({
-            texto: opcion.textContent,
-            id: opcion.getAttribute("id")
-        })),
-        correcta: cuestionario.getElementsByTagName("correcta")[0].textContent
-    }));
-}
-
-// Función para mostrar las preguntas en el DOM
-function mostrarPreguntas(preguntas) {
-    const quizContainer = document.getElementById("quiz");
-    quizContainer.innerHTML = ""; // Limpia el contenedor
-    shuffle(preguntas);
+// Función para mostrar preguntas en el DOM
+function mostrarPreguntas(quizContainer) {
+    quizContainer.innerHTML = ""; // Limpiar el contenedor
 
     preguntas.forEach((pregunta, index) => {
         const preguntaDiv = document.createElement("div");
@@ -51,7 +67,7 @@ function mostrarPreguntas(preguntas) {
 
         const opciones = [...pregunta.opciones];
         shuffle(opciones);
-
+        
         opciones.forEach(opcion => {
             const li = document.createElement("li");
             const input = document.createElement("input");
@@ -72,14 +88,6 @@ function mostrarPreguntas(preguntas) {
         preguntaDiv.appendChild(opcionesList);
         quizContainer.appendChild(preguntaDiv);
     });
-}
-
-// Función para mezclar (aleatorizar) un array
-function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
 }
 
 // Función para verificar las respuestas seleccionadas
