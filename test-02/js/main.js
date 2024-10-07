@@ -1,17 +1,24 @@
 // main.js
 
+let preguntas = []; // Mueve la declaración aquí para que sea global
+
 function cargarPreguntas() {
     const quizContainer = document.getElementById("quiz");
     quizContainer.innerHTML = ""; // Limpia el contenedor
 
-    fetch('test-02/data.xml')
-        .then(response => response.text())
+    fetch('data.xml') // Ajusta la ruta a 'data.xml' ya que está en el mismo nivel que index.html
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al cargar el archivo XML');
+            }
+            return response.text();
+        })
         .then(data => {
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(data, "application/xml");
             const cuestionarios = xmlDoc.getElementsByTagName("cuestionario");
 
-            const preguntas = Array.from(cuestionarios).map(cuestionario => ({
+            preguntas = Array.from(cuestionarios).map(cuestionario => ({
                 titulo: cuestionario.getElementsByTagName("titulo")[0].textContent,
                 opciones: Array.from(cuestionario.getElementsByTagName("opcion")).map(opcion => ({
                     texto: opcion.textContent,
@@ -84,3 +91,4 @@ function checkAnswers() {
 
 // Inicializa el cuestionario
 cargarPreguntas();
+
