@@ -25,6 +25,31 @@ h2 {
 
 .opciones li {
     margin-bottom: 10px;
+    cursor: pointer; /* Cambia el cursor a mano para indicar que se puede seleccionar */
+}
+
+/* Oculta el radio button */
+.opciones li input[type="radio"] {
+    display: none;
+}
+
+/* Estilos para el texto de las opciones */
+.opciones li label {
+    display: block; /* Asegura que el label ocupe el ancho completo */
+    padding: 10px; /* Añade un poco de espaciado para que sea más fácil de tocar */
+    border: 1px solid transparent; /* Por defecto, no hay borde */
+    transition: background-color 0.3s; /* Añade transición para el fondo */
+}
+
+/* Cambia el fondo al pasar el ratón */
+.opciones li label:hover {
+    background-color: #f0f0f0; 
+}
+
+/* Cambia el fondo y el color del texto de la opción seleccionada */
+.opciones li input[type="radio"]:checked + label {
+    background-color: #007bff; /* Color de fondo azul para la opción seleccionada */
+    color: white; /* Cambia el texto a blanco */
 }
 
 /* Estilo para mostrar el resultado */
@@ -53,16 +78,6 @@ h2 {
 
     .resultado {
         font-size: 16px; /* Ajusta el tamaño del texto del resultado */
-    }
-
-    /* Estilo para opciones seleccionadas */
-    .opcion label.seleccionada {
-        background-color: #007bff; /* Color de fondo azul */
-        color: white; /* Color de texto blanco */
-        padding: 5px; /* Espaciado interno */
-        border-radius: 4px; /* Bordes redondeados */
-        cursor: pointer; /* Cambia el cursor a mano */
-        display: block; /* Hace que el label ocupe el ancho completo */
     }
 }
 
