@@ -1,9 +1,8 @@
-/* Estilo para las opciones seleccionadas */
-.opcion {
-    cursor: pointer; /* Cambiar el cursor a puntero */
-}
-
-.opcion.selected {
-    background-color: #007bff; /* Color de fondo al seleccionar */
-    color: white; /* Color del texto al seleccionar */
+/* Estilo para la opción seleccionada */
+.opcion label.seleccionada {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color de texto blanco */
+    padding: 5px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano */
 }
