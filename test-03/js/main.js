@@ -1,11 +1,10 @@
-let preguntas = [];
-let preguntaActual = 0;
+let preguntas = []; // Mueve la declaración aquí para que sea global
 
 function cargarPreguntas() {
     const quizContainer = document.getElementById("quiz");
-    quizContainer.innerHTML = ""; 
+    quizContainer.innerHTML = ""; // Limpia el contenedor
 
-    fetch('data.xml') // Ajusta la ruta a tu archivo XML
+    fetch('data.xml') // Ajusta la ruta a 'data.xml' ya que está en el mismo nivel que index.html
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error al cargar el archivo XML');
@@ -19,74 +18,59 @@ function cargarPreguntas() {
 
             preguntas = Array.from(cuestionarios).map(cuestionario => ({
                 titulo: cuestionario.getElementsByTagName("titulo")[0].textContent,
-                opciones: Array.from(cuestionario.getElementsByTagName("opcion")).map(opcion => ({
+                opciones: Array.from(cuestionario.getElementsByTagName("opciones")[0].getElementsByTagName("opcion")).map(opcion => ({
                     texto: opcion.textContent,
                     id: opcion.getAttribute("id")
                 })),
                 correcta: cuestionario.getElementsByTagName("correcta")[0].textContent
             }));
 
-            mostrarPregunta();
+            shuffle(preguntas); // Mezcla las preguntas
+
+            preguntas.forEach((pregunta, index) => {
+                const preguntaDiv = document.createElement("div");
+                preguntaDiv.classList.add("pregunta-container");
+
+                const titulo = document.createElement("h2");
+                titulo.textContent = `${index + 1}. ${pregunta.titulo}`;
+                preguntaDiv.appendChild(titulo);
+
+                const opcionesList = document.createElement("ul");
+                opcionesList.classList.add("opciones");
+
+                const opciones = [...pregunta.opciones];
+                shuffle(opciones);
+                
+                opciones.forEach(opcion => {
+                    const li = document.createElement("li");
+                    const input = document.createElement("input");
+                    input.type = "radio";
+                    input.name = `pregunta-${index}`;
+                    input.value = opcion.id;
+                    input.id = `pregunta-${index}-${opcion.id}`;
+
+                    const label = document.createElement("label");
+                    label.htmlFor = input.id;
+                    label.textContent = opcion.texto;
+
+                    li.appendChild(input);
+                    li.appendChild(label);
+                    opcionesList.appendChild(li);
+                });
+
+                preguntaDiv.appendChild(opcionesList);
+                quizContainer.appendChild(preguntaDiv);
+            });
         })
         .catch(error => {
             console.error("Error al cargar el archivo XML:", error);
         });
 }
 
-function mostrarPregunta() {
-    const quizContainer = document.getElementById("quiz");
-    quizContainer.innerHTML = ""; // Limpia el contenedor
-
-    const pregunta = preguntas[preguntaActual];
-    const preguntaDiv = document.createElement("div");
-    preguntaDiv.classList.add("pregunta-container");
-
-    const titulo = document.createElement("h2");
-    titulo.textContent = `${preguntaActual + 1}. ${pregunta.titulo}`;
-    preguntaDiv.appendChild(titulo);
-
-    const opcionesList = document.createElement("ul");
-    opcionesList.classList.add("opciones");
-
-    pregunta.opciones.forEach(opcion => {
-        const li = document.createElement("li");
-        const input = document.createElement("input");
-        input.type = "radio";
-        input.name = `pregunta-${preguntaActual}`;
-        input.value = opcion.id;
-        input.id = `pregunta-${preguntaActual}-${opcion.id}`;
-
-        const label = document.createElement("label");
-        label.htmlFor = input.id;
-        label.textContent = opcion.texto;
-
-        li.appendChild(input);
-        li.appendChild(label);
-        opcionesList.appendChild(li);
-    });
-
-    preguntaDiv.appendChild(opcionesList);
-    quizContainer.appendChild(preguntaDiv);
-
-    actualizarBotones();
-}
-
-function actualizarBotones() {
-    document.getElementById("btnAnterior").style.display = preguntaActual === 0 ? 'none' : 'inline';
-    document.getElementById("btnSiguiente").style.display = preguntaActual === preguntas.length - 1 ? 'none' : 'inline';
-}
-
-function siguientePregunta() {
-    if (preguntaActual < preguntas.length - 1) {
-        preguntaActual++;
-        mostrarPregunta();
-    }
-}
-
-function anteriorPregunta() {
-    if (preguntaActual > 0) {
-        preguntaActual--;
-        mostrarPregunta();
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
     }
 }
 
@@ -105,3 +89,4 @@ function checkAnswers() {
 
 // Inicializa el cuestionario
 cargarPreguntas();
+
