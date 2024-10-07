@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     padding: 0 15px; /* Agrega un padding lateral para móviles */
+    margin: 0; /* Asegúrate de que no haya margen por defecto */
 }
 
 /* Estilos para cada contenedor de pregunta */
@@ -21,7 +22,7 @@ h1 {
 
 h2 {
     font-size: 20px; /* Ajusta el tamaño de los títulos de las preguntas */
-    margin-bottom: 10px; /* Espacio entre el título y las opciones */
+    margin: 0 0 10px 0; /* Espacio entre el título y las opciones */
 }
 
 /* Espaciado entre las opciones */
@@ -44,7 +45,7 @@ h2 {
     display: block; /* Asegura que el label ocupe el ancho completo */
     padding: 10px; /* Añade un poco de espaciado para que sea más fácil de tocar */
     border: 1px solid transparent; /* Por defecto, no hay borde */
-    transition: background-color 0.3s; /* Añade transición para el fondo */
+    transition: background-color 0.3s, border-color 0.3s; /* Añade transición para el fondo y el borde */
     font-size: 18px; /* Ajusta el tamaño de la fuente de las opciones */
 }
 
