@@ -74,7 +74,7 @@ h2 {
     }
 
     h2 {
-        font-size: 18px; /* Tamaño de los títulos de preguntas para móviles */
+        font-size: 16px; /* Tamaño de los títulos de preguntas para móviles */
     }
 
     .pregunta-container {
