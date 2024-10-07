@@ -89,4 +89,3 @@ function checkAnswers() {
 
 // Inicializa el cuestionario
 cargarPreguntas();
-
