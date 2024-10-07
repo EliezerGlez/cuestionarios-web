@@ -1,5 +1,3 @@
-// main.js
-
 let preguntas = []; // Mueve la declaración aquí para que sea global
 
 function cargarPreguntas() {
@@ -20,7 +18,7 @@ function cargarPreguntas() {
 
             preguntas = Array.from(cuestionarios).map(cuestionario => ({
                 titulo: cuestionario.getElementsByTagName("titulo")[0].textContent,
-                opciones: Array.from(cuestionario.getElementsByTagName("opcion")).map(opcion => ({
+                opciones: Array.from(cuestionario.getElementsByTagName("opciones")[0].getElementsByTagName("opcion")).map(opcion => ({
                     texto: opcion.textContent,
                     id: opcion.getAttribute("id")
                 })),
@@ -91,4 +89,5 @@ function checkAnswers() {
 
 // Inicializa el cuestionario
 cargarPreguntas();
+
 
