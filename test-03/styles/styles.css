@@ -1,8 +1,29 @@
-/* Estilo para la opción seleccionada */
-.opcion label.seleccionada {
-    background-color: #007bff; /* Color de fondo azul */
-    color: white; /* Color de texto blanco */
-    padding: 5px; /* Espaciado interno */
-    border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor a mano */
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para cada contenedor de pregunta */
+.pregunta-container {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para los títulos de las preguntas */
+h2 {
+    font-size: 18px;
+}
+
+/* Espaciado entre las opciones */
+.opciones li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para mostrar el resultado */
+.resultado {
+    font-weight: bold;
+    margin-top: 20px;
 }
