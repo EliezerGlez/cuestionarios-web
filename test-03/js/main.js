@@ -43,13 +43,17 @@ function cargarPreguntas() {
                 
                 opciones.forEach(opcion => {
                     const li = document.createElement("li");
-                    li.classList.add("opcion");
+                    const input = document.createElement("input");
+                    input.type = "radio";
+                    input.name = `pregunta-${index}`;
+                    input.value = opcion.id;
+                    input.id = `pregunta-${index}-${opcion.id}`;
 
                     const label = document.createElement("label");
+                    label.htmlFor = input.id;
                     label.textContent = opcion.texto;
-                    label.setAttribute("data-id", opcion.id);
-                    label.onclick = () => seleccionarOpcion(label, index); // Agregar evento de clic
 
+                    li.appendChild(input);
                     li.appendChild(label);
                     opcionesList.appendChild(li);
                 });
@@ -61,17 +65,6 @@ function cargarPreguntas() {
         .catch(error => {
             console.error("Error al cargar el archivo XML:", error);
         });
-}
-
-// Función para seleccionar la opción al hacer clic
-function seleccionarOpcion(label, index) {
-    const opciones = document.querySelectorAll(`.opciones li label`);
-    opciones.forEach(opcion => {
-        opcion.classList.remove("seleccionada"); // Eliminar la clase seleccionada de todas las opciones
-    });
-    label.classList.add("seleccionada"); // Añadir la clase seleccionada a la opción clicada
-    const idSeleccionado = label.getAttribute("data-id");
-    document.querySelector(`input[name="pregunta-${index}"]`).value = idSeleccionado; // Actualiza el valor del radio button
 }
 
 function shuffle(array) {
