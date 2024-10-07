@@ -1,19 +1,15 @@
 /* Estilos generales del cuerpo */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-/* Estilo del encabezado que contiene los botones y el título */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Espaciado entre botones y título */
 }
 
 /* Estilos para cada contenedor de pregunta */
 .pregunta-container {
     margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
 }
 
 /* Estilos para los títulos de las preguntas */
@@ -21,29 +17,9 @@ h2 {
     font-size: 18px;
 }
 
-/* Elimina el estilo de lista para las opciones */
-.opciones {
-    list-style: none;
-    padding: 0;
-}
-
 /* Espaciado entre las opciones */
 .opciones li {
-    margin-bottom: 5px;
-}
-
-/* Estilos del botón */
-.btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.btn:hover {
-    background-color: #45a049;
+    margin-bottom: 10px;
 }
 
 /* Estilo para mostrar el resultado */
