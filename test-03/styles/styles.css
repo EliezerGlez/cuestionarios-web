@@ -1,6 +1,7 @@
 /* Estilos generales del cuerpo */
 body {
     font-family: Arial, sans-serif;
+    padding: 0 15px; /* Agrega un padding lateral para móviles */
 }
 
 /* Estilos para cada contenedor de pregunta */
@@ -18,6 +19,10 @@ h2 {
 }
 
 /* Espaciado entre las opciones */
+.opciones {
+    padding-left: 0; /* Remueve el padding izquierdo por defecto de las listas */
+}
+
 .opciones li {
     margin-bottom: 10px;
 }
@@ -59,4 +64,11 @@ h2 {
         cursor: pointer; /* Cambia el cursor a mano */
         display: block; /* Hace que el label ocupe el ancho completo */
     }
+}
+
+/* Asegurarse de que el contenedor principal tenga un ancho completo */
+.container {
+    max-width: 100%; /* Asegúrate de que el contenedor principal sea del 100% del ancho */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 0 15px; /* Asegúrate de tener padding en los lados */
 }
