@@ -43,18 +43,19 @@ function cargarPreguntas() {
                 
                 opciones.forEach(opcion => {
                     const li = document.createElement("li");
-                    const input = document.createElement("input");
-                    input.type = "radio";
-                    input.name = `pregunta-${index}`;
-                    input.value = opcion.id;
-                    input.id = `pregunta-${index}-${opcion.id}`;
+                    li.classList.add("opcion");
+                    li.dataset.id = opcion.id; // Almacena el ID de la opción
+                    li.textContent = opcion.texto;
 
-                    const label = document.createElement("label");
-                    label.htmlFor = input.id;
-                    label.textContent = opcion.texto;
+                    // Agregar evento de clic para seleccionar la opción
+                    li.addEventListener("click", () => {
+                        // Desmarcar las opciones previamente seleccionadas
+                        const opcionesPrevias = opcionesList.querySelectorAll(".opcion");
+                        opcionesPrevias.forEach(op => op.classList.remove("selected"));
+                        // Marcar la opción seleccionada
+                        li.classList.add("selected");
+                    });
 
-                    li.appendChild(input);
-                    li.appendChild(label);
                     opcionesList.appendChild(li);
                 });
 
@@ -77,8 +78,8 @@ function shuffle(array) {
 function checkAnswers() {
     let score = 0;
     preguntas.forEach((pregunta, index) => {
-        const respuestaSeleccionada = document.querySelector(`input[name="pregunta-${index}"]:checked`);
-        if (respuestaSeleccionada && respuestaSeleccionada.value === pregunta.correcta) {
+        const respuestaSeleccionada = document.querySelector(`.pregunta-container:nth-child(${index + 1}) .selected`);
+        if (respuestaSeleccionada && respuestaSeleccionada.dataset.id === pregunta.correcta) {
             score++;
         }
     });
