@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cuestionarios>
+    <cuestionario>
+        <titulo>CAC 2010 Veter. A2 - 104.-) El derecho a la producción técnica ¿cuándo puede restringirse mediante censura previa?</titulo>
+        <opciones>
+            <opcion id="a">Nunca.</opcion>
+            <opcion id="b">Por resolución judicial.</opcion>
+            <opcion id="c">Solo en los casos previstos en las leyes.</opcion>
+            <opcion id="d">Solo en el caso previsto en la Constitución.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+    <cuestionario>
+        <titulo>ORO.. CAC 2010 Veter. A2 - 5.-) ¿Cuál de los siguientes no es un derecho fundamental?</titulo>
+        <opciones>
+            <opcion id="a">El derecho a participar en los asuntos públicos por medio de representantes.</opcion>
+            <opcion id="b">El derecho de petición colectiva efectuado por miembros de las fuerzas armadas.</opcion>
+            <opcion id="c">El derecho a no ser enjuiciado por un Tribunal de Honor en el ámbito de una organización profesional.</opcion>
+            <opcion id="d">El derecho a la educación.</opcion>
+        </opciones>
+        <correcta>b</correcta>
+    </cuestionario>
+    <cuestionario>
+        <titulo>ORO.. A2 TL AGE 09 - 904.-) De acuerdo con la Constitución, señale cuál de los siguientes derechos podrá ser objeto de suspensión cuando se declaren los estados de excepción o sitio:</titulo>
+        <opciones>
+            <opcion id="a">Derecho a la inviolabilidad del domicilio (art 18.2 CE).</opcion>
+            <opcion id="b">Derecho a la producción y creación literaria (art 20.1.b CE).</opcion>
+            <opcion id="c">Derecho de asociación (art 22.1 CE).</opcion>
+            <opcion id="d">Derecho a la educación (art 27.1 CE).</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+</cuestionarios>
