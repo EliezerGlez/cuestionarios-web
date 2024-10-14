@@ -166,4 +166,241 @@
         <opcion id="c">Los ciudadanos españoles.</opcion>
     </opciones>
     <correcta>b</correcta>
+</cuestionario>
+
+   <cuestionario id="1">
+        <titulo>ORO.. 2023 Batería SCS C1 TL PE - 92.-) La Constitución Española de 1978 consta de:</titulo>
+        <opciones>
+            <opcion id="a">169 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Títulos.</opcion>
+            <opcion id="b">168 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Capítulos.</opcion>
+            <opcion id="c">170 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Capítulos.</opcion>
+            <opcion id="d">169 artículos, y se estructura en un Título Preliminar y 10 Capítulos.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="2">
+        <titulo>ORO.. 2023 Batería SCS C1 TL PE - 91.-) El Título I de la Constitución Española "De los derechos y deberes fundamentales" comprende los artículos:</titulo>
+        <opciones>
+            <opcion id="a">Artículo 10 al 55.</opcion>
+            <opcion id="b">Artículo 11 al 55.</opcion>
+            <opcion id="c">Artículo 15 al 29.</opcion>
+            <opcion id="d">Artículo 1 al 9.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="3">
+        <titulo>ORO.. 2023 Batería SCS C1 TL PE - 96.-) El Título I de la Constitución Española, en su Capítulo II, contiene:</titulo>
+        <opciones>
+            <opcion id="a">Dos Secciones, respectivamente tituladas "De los derechos fundamentales y de las libertades públicas" y "De los derechos y deberes de los ciudadanos".</opcion>
+            <opcion id="b">Dos Secciones, respectivamente tituladas "De los españoles y los extranjeros" y "De los derechos y deberes de los ciudadanos".</opcion>
+            <opcion id="c">Tres Secciones, respectivamente tituladas "De los españoles y los extranjeros", "De los derechos y libertades" y "De los deberes de los ciudadanos".</opcion>
+            <opcion id="d">Un solo artículo, que proclama la igualdad de todos ante la ley.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="4">
+        <titulo>ORO.. 2023 Ayto. Arucas C2 - 27.-) La Constitución Española de 1978 (en adelante CE) se compone de:</titulo>
+        <opciones>
+            <opcion id="a">10 títulos, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+            <opcion id="b">11 títulos, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+            <opcion id="c">1 título preliminar, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+            <opcion id="d">11 títulos, 169 artículos, 9 disposiciones adicionales, 4 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="5">
+        <titulo>ORO.. C2 CAC 2019 - 1.-) En la Constitución española, los derechos y deberes fundamentales:</titulo>
+        <opciones>
+            <opcion id="a">Están regulados en el Título I, del artículo 10 al 55.</opcion>
+            <opcion id="b">Están regulados en el Título I, del artículo 14 al 28.</opcion>
+            <opcion id="c">Están regulados en el Título I, del art. 15 al 29.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="6">
+        <titulo>CAC 2019 - 901.-) En la Constitución española, los derechos fundamentales y libertades públicas:</titulo>
+        <opciones>
+            <opcion id="a">Están regulados en el Título I, del artículo 10 al 55.</opcion>
+            <opcion id="b">Están regulados en el Título I, del artículo 14 al 28.</opcion>
+            <opcion id="c">Están regulados en el Título I, del art. 15 al 29.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="7">
+        <titulo>ORO.. C2 Ayto de Arona 2018 - 19.-) La Constitución Española de 1978 consta de la siguiente estructura:</titulo>
+        <opciones>
+            <opcion id="a">Preámbulo, diez Títulos, cuatro Disposiciones Adicionales, nueve Disposiciones Transitorias, una Disposición Derogatoria, y una Disposición final.</opcion>
+            <opcion id="b">Once Títulos, cuatro Disposiciones Adicionales, ocho Disposiciones Transitorias, una Disposición Derogatoria y una Disposición Final.</opcion>
+            <opcion id="c">Preámbulo, once Títulos, cuatro Disposiciones adicionales, nueve Disposiciones transitorias, una Disposición derogatoria y una Disposición final.</opcion>
+            <opcion id="d">Preámbulo, Título Preliminar, Títulos del I al X, Disposiciones Transitorias (1ª a 9ª), Disposición derogatoria (única) y Disposición final (única).</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="8">
+        <titulo>ORO.. LR C2 Ayto Arona 2018 - 34.-) La Constitución Española de 1978 recoge los derechos fundamentales y las libertades públicas en:</titulo>
+        <opciones>
+            <opcion id="a">Título III, Capítulo Primero, Sección 2ª.</opcion>
+            <opcion id="b">Artículos del 10 al 55 del Título II, Capítulo Segundo.</opcion>
+            <opcion id="c">Los artículos 15 al 29 del Título I, Capítulo Segundo, Sección 1ª.</opcion>
+            <opcion id="d">Artículos del 15 al 29 del Título I, Capítulo Primero, Sección 2ª.</opcion>
+        </opciones>
+        <correcta>c</correcta>
+    </cuestionario>
+
+    <cuestionario id="9">
+        <titulo>ORO.. LR E Ayto Arona 2018 - 20.-) En qué Título de la Constitución encontramos los Derechos y Deberes Fundamentales:</titulo>
+        <opciones>
+            <opcion id="a">En el Título II, artículos del 10 al 55 de la Constitución.</opcion>
+            <opcion id="b">En el Título I y consta de cuatro Capítulos.</opcion>
+            <opcion id="c">En el Título Preliminar.</opcion>
+            <opcion id="d">Ninguna es correcta.</opcion>
+        </opciones>
+        <correcta>b</correcta>
+    </cuestionario>
+
+    <cuestionario id="10">
+        <titulo>ORO.. TL C1 AGE 2018 - 41.-) ¿En qué parte de la CE se regula la nacionalidad española?:</titulo>
+        <opciones>
+            <opcion id="a">En el Título Preliminar.</opcion>
+            <opcion id="b">En el Preámbulo.</opcion>
+            <opcion id="c">En el Título Primero.</opcion>
+            <opcion id="d">En el Título Segundo.</opcion>
+        </opciones>
+        <correcta>c</correcta>
+    </cuestionario>
+
+    <cuestionario id="11">
+        <titulo>ORO.. DC C2 Cab El Hierro 2018 - 29.-) ¿Qué Título de la Constitución es el que establece las reglas de la reforma constitucional?</titulo>
+        <opciones>
+            <opcion id="a">Décimo.</opcion>
+            <opcion id="b">Noveno.</opcion>
+            <opcion id="c">Octavo.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+<cuestionario id="1">
+        <titulo>ORO.. 2023 Batería SCS C1 TL PE - 92.-) La Constitución Española de 1978 consta de:</titulo>
+        <opciones>
+            <opcion id="a">169 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Títulos.</opcion>
+            <opcion id="b">168 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Capítulos.</opcion>
+            <opcion id="c">170 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Capítulos.</opcion>
+            <opcion id="d">169 artículos, y se estructura en un Título Preliminar y 10 Capítulos.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="2">
+        <titulo>ORO.. 2023 Batería SCS C1 TL PE - 91.-) El Título I de la Constitución Española "De los derechos y deberes fundamentales" comprende los artículos:</titulo>
+        <opciones>
+            <opcion id="a">Artículo 10 al 55.</opcion>
+            <opcion id="b">Artículo 11 al 55.</opcion>
+            <opcion id="c">Artículo 15 al 29.</opcion>
+            <opcion id="d">Artículo 1 al 9.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="3">
+        <titulo>ORO.. 2023 Batería SCS C1 TL PE - 96.-) El Título I de la Constitución Española, en su Capítulo II, contiene:</titulo>
+        <opciones>
+            <opcion id="a">Dos Secciones, respectivamente tituladas "De los derechos fundamentales y de las libertades públicas" y "De los derechos y deberes de los ciudadanos".</opcion>
+            <opcion id="b">Dos Secciones, respectivamente tituladas "De los españoles y los extranjeros" y "De los derechos y deberes de los ciudadanos".</opcion>
+            <opcion id="c">Tres Secciones, respectivamente tituladas "De los españoles y los extranjeros", "De los derechos y libertades" y "De los deberes de los ciudadanos".</opcion>
+            <opcion id="d">Un solo artículo, que proclama la igualdad de todos ante la ley.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="4">
+        <titulo>ORO.. 2023 Ayto. Arucas C2 - 27.-) La Constitución Española de 1978 (en adelante CE) se compone de:</titulo>
+        <opciones>
+            <opcion id="a">10 títulos, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+            <opcion id="b">11 títulos, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+            <opcion id="c">1 título preliminar, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+            <opcion id="d">11 títulos, 169 artículos, 9 disposiciones adicionales, 4 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="5">
+        <titulo>ORO.. C2 CAC 2019 - 1.-) En la Constitución española, los derechos y deberes fundamentales:</titulo>
+        <opciones>
+            <opcion id="a">Están regulados en el Título I, del artículo 10 al 55.</opcion>
+            <opcion id="b">Están regulados en el Título I, del artículo 14 al 28.</opcion>
+            <opcion id="c">Están regulados en el Título I, del art. 15 al 29.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="6">
+        <titulo>CAC 2019 - 901.-) En la Constitución española, los derechos fundamentales y libertades públicas:</titulo>
+        <opciones>
+            <opcion id="a">Están regulados en el Título I, del artículo 10 al 55.</opcion>
+            <opcion id="b">Están regulados en el Título I, del artículo 14 al 28.</opcion>
+            <opcion id="c">Están regulados en el Título I, del art. 15 al 29.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="7">
+        <titulo>ORO.. C2 Ayto de Arona 2018 - 19.-) La Constitución Española de 1978 consta de la siguiente estructura:</titulo>
+        <opciones>
+            <opcion id="a">Preámbulo, diez Títulos, cuatro Disposiciones Adicionales, nueve Disposiciones Transitorias, una Disposición Derogatoria, y una Disposición final.</opcion>
+            <opcion id="b">Once Títulos, cuatro Disposiciones Adicionales, ocho Disposiciones Transitorias, una Disposición Derogatoria y una Disposición Final.</opcion>
+            <opcion id="c">Preámbulo, once Títulos, cuatro Disposiciones adicionales, nueve Disposiciones transitorias, una Disposición derogatoria y una Disposición final.</opcion>
+            <opcion id="d">Preámbulo, Título Preliminar, Títulos del I al X, Disposiciones Transitorias (1ª a 9ª), Disposición derogatoria (única) y Disposición final (única).</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
+    <cuestionario id="8">
+        <titulo>ORO.. LR C2 Ayto Arona 2018 - 34.-) La Constitución Española de 1978 recoge los derechos fundamentales y las libertades públicas en:</titulo>
+        <opciones>
+            <opcion id="a">Título III, Capítulo Primero, Sección 2ª.</opcion>
+            <opcion id="b">Artículos del 10 al 55 del Título II, Capítulo Segundo.</opcion>
+            <opcion id="c">Los artículos 15 al 29 del Título I, Capítulo Segundo, Sección 1ª.</opcion>
+            <opcion id="d">Artículos del 15 al 29 del Título I, Capítulo Primero, Sección 2ª.</opcion>
+        </opciones>
+        <correcta>c</correcta>
+    </cuestionario>
+
+    <cuestionario id="9">
+        <titulo>ORO.. LR E Ayto Arona 2018 - 20.-) En qué Título de la Constitución encontramos los Derechos y Deberes Fundamentales:</titulo>
+        <opciones>
+            <opcion id="a">En el Título II, artículos del 10 al 55 de la Constitución.</opcion>
+            <opcion id="b">En el Título I y consta de cuatro Capítulos.</opcion>
+            <opcion id="c">En el Título Preliminar.</opcion>
+            <opcion id="d">Ninguna es correcta.</opcion>
+        </opciones>
+        <correcta>b</correcta>
+    </cuestionario>
+
+    <cuestionario id="10">
+        <titulo>ORO.. TL C1 AGE 2018 - 41.-) ¿En qué parte de la CE se regula la nacionalidad española?:</titulo>
+        <opciones>
+            <opcion id="a">En el Título Preliminar.</opcion>
+            <opcion id="b">En el Preámbulo.</opcion>
+            <opcion id="c">En el Título Primero.</opcion>
+            <opcion id="d">En el Título Segundo.</opcion>
+        </opciones>
+        <correcta>c</correcta>
+    </cuestionario>
+
+    <cuestionario id="11">
+        <titulo>ORO.. DC C2 Cab El Hierro 2018 - 29.-) ¿Qué Título de la Constitución es el que establece las reglas de la reforma constitucional?</titulo>
+        <opciones>
+            <opcion id="a">Décimo.</opcion>
+            <opcion id="b">Noveno.</opcion>
+            <opcion id="c">Octavo.</opcion>
+        </opciones>
+        <correcta>a</correcta>
+    </cuestionario>
+
 </cuestionarios>
