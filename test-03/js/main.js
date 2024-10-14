@@ -97,6 +97,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cuestionariosContainer = document.getElementById("cuestionarios");
     
+    // Verificar si el contenedor existe
+    if (!cuestionariosContainer) {
+        console.error("El contenedor de cuestionarios no se encontró.");
+        return;
+    }
+        
     // Cargar preguntas desde el archivo JSON
     fetch("data.json")
         .then(response => response.json())
