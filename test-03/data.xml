@@ -1,426 +1,169 @@
-<cuestionario>
-    <pregunta id="1">
-        <texto>La CE fue ratificada por referéndum nacional el:</texto>
+<?xml version="1.0" encoding="UTF-8"?>
+<cuestionarios>
+    <cuestionario>
+        <titulo>CAC 2010 Veter. A2 - 104.-) El derecho a la producción técnica ¿cuándo puede restringirse mediante censura previa?</titulo>
         <opciones>
-            <opcion letra="a">29 de diciembre de 1978.</opcion>
-            <opcion letra="b">27 de diciembre de 1978.</opcion>
-            <opcion letra="c">31 de octubre de 1978.</opcion>
-            <opcion letra="d">6 de diciembre de 1978.</opcion>
+            <opcion id="a">Nunca.</opcion>
+            <opcion id="b">Por resolución judicial.</opcion>
+            <opcion id="c">Solo en los casos previstos en las leyes.</opcion>
+            <opcion id="d">Solo en el caso previsto en la Constitución.</opcion>
         </opciones>
-        <respuesta_correcta>d</respuesta_correcta>
-    </pregunta>
-    
-    <pregunta id="2">
-        <texto>La Constitución Española de 1978:</texto>
+        <correcta>a</correcta>
+    </cuestionario>
+    <cuestionario>
+        <titulo>ORO.. CAC 2010 Veter. A2 - 5.-) ¿Cuál de los siguientes no es un derecho fundamental?</titulo>
         <opciones>
-            <opcion letra="a">Entró en vigor el 31 de diciembre de 1978.</opcion>
-            <opcion letra="b">Fue aprobada por las Cortes Generales en sesiones plenarias del Congreso de los Diputados y del Senado celebradas el 31 de octubre de 1978, ratificada por el pueblo español en referéndum de 6 de diciembre de 1978 y sancionada por S.M. el Rey ante las Cortes el 27 de diciembre, entrando en vigor el 29 de diciembre del mismo año.</opcion>
-            <opcion letra="c">Fue ratificada en referéndum el 12 de diciembre de 1978.</opcion>
-            <opcion letra="d">No ha sido modificada en ninguna ocasión.</opcion>
+            <opcion id="a">El derecho a participar en los asuntos públicos por medio de representantes.</opcion>
+            <opcion id="b">El derecho de petición colectiva efectuado por miembros de las fuerzas armadas.</opcion>
+            <opcion id="c">El derecho a no ser enjuiciado por un Tribunal de Honor en el ámbito de una organización profesional.</opcion>
+            <opcion id="d">El derecho a la educación.</opcion>
         </opciones>
-        <respuesta_correcta>b</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="3">
-        <texto>¿La Constitución Española de 1978 (en adelante CE) ha sido reformada?</texto>
+        <correcta>b</correcta>
+    </cuestionario>
+    <cuestionario>
+        <titulo>ORO.. A2 TL AGE 09 - 904.-) De acuerdo con la Constitución, señale cuál de los siguientes derechos podrá ser objeto de suspensión cuando se declaren los estados de excepción o sitio:</titulo>
         <opciones>
-            <opcion letra="a">No.</opcion>
-            <opcion letra="b">Sí, en dos ocasiones y ambas por el procedimiento ordinario.</opcion>
-            <opcion letra="c">Sí, una sola vez y por el procedimiento ordinario.</opcion>
-            <opcion letra="d">Sí, una sola vez y por el procedimiento agravado.</opcion>
+            <opcion id="a">Derecho a la inviolabilidad del domicilio (art 18.2 CE).</opcion>
+            <opcion id="b">Derecho a la producción y creación literaria (art 20.1.b CE).</opcion>
+            <opcion id="c">Derecho de asociación (art 22.1 CE).</opcion>
+            <opcion id="d">Derecho a la educación (art 27.1 CE).</opcion>
         </opciones>
-        <respuesta_correcta>b</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="4">
-        <texto>En el Ordenamiento Jurídico español, la norma de mayor rango jerárquico es:</texto>
-        <opciones>
-            <opcion letra="a">El Tratado de Maastricht.</opcion>
-            <opcion letra="b">La Corona.</opcion>
-            <opcion letra="c">La Constitución.</opcion>
-            <opcion letra="d">El Tratado de Adhesión a la Unión Europea.</opcion>
-        </opciones>
-        <respuesta_correcta>c</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="5">
-        <texto>¿La Constitución Española de 1978 ha sufrido alguna reforma?</texto>
-        <opciones>
-            <opcion letra="a">Sí, una reforma en el Título II de La Corona.</opcion>
-            <opcion letra="b">Sí, ha sufrido una única reforma en su estructura en el año 1992.</opcion>
-            <opcion letra="c">No, no ha habido quórum para proceder a la reforma del Título II de La Corona, en concreto el artículo 57.</opcion>
-            <opcion letra="d">Sí, ha sufrido dos reformas, la primera en el año 1992 y la segunda en el año 2011.</opcion>
-        </opciones>
-        <respuesta_correcta>d</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="6">
-        <texto>¿Las dos reformas que ha experimentado la Constitución Española de 1978 han seguido el procedimiento?</texto>
-        <opciones>
-            <opcion letra="a">Una por el procedimiento ordinario del art. 167 y otra por el procedimiento agravado del art. 168.</opcion>
-            <opcion letra="b">Las dos por el procedimiento agravado del art. 168.</opcion>
-            <opcion letra="c">Las dos por el procedimiento ordinario del art. 167.</opcion>
-            <opcion letra="d">No es correcto, la Constitución nunca ha sido objeto de reforma.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="7">
-        <texto>¿Las tres reformas que ha experimentado la Constitución Española de 1978 han seguido el procedimiento?</texto>
-        <opciones>
-            <opcion letra="a">Dos por el procedimiento ordinario del art. 167 y otra por el procedimiento agravado del art. 168.</opcion>
-            <opcion letra="b">Las tres por el procedimiento agravado del art. 168.</opcion>
-            <opcion letra="c">Las tres por el procedimiento ordinario del art. 167.</opcion>
-            <opcion letra="d">No es correcto, la Constitución nunca ha sido objeto de reforma.</opcion>
-        </opciones>
-        <respuesta_correcta>d</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="8">
-        <texto>¿Cuándo se sancionó la Constitución española de 1978?</texto>
-        <opciones>
-            <opcion letra="a">El 6 de diciembre por el pueblo.</opcion>
-            <opcion letra="b">El 31 de octubre por las Cortes Generales.</opcion>
-            <opcion letra="c">El 27 de diciembre por el Rey.</opcion>
-            <opcion letra="d">El 29 de diciembre por el Gobierno.</opcion>
-        </opciones>
-        <respuesta_correcta>c</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="9">
-        <texto>La vigente Constitución Española fue ratificada en referéndum:</texto>
-        <opciones>
-            <opcion letra="a">El 8 de diciembre de 1978.</opcion>
-            <opcion letra="b">El 6 de diciembre de 1978.</opcion>
-            <opcion letra="c">El 6 de diciembre de 1979.</opcion>
-        </opciones>
-        <respuesta_correcta>b</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="10">
-        <texto>¿Cuántos artículos tiene la vigente Constitución Española (en adelante CE)?</texto>
-        <opciones>
-            <opcion letra="a">169.</opcion>
-            <opcion letra="b">196.</opcion>
-            <opcion letra="c">179.</opcion>
-            <opcion letra="d">197.</opcion>
-        </opciones>
-        <respuesta_correcta>d</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="11">
-        <texto>La Constitución Española se caracteriza por:</texto>
-        <opciones>
-            <opcion letra="a">Su carácter abierto y de fácil modificación.</opcion>
-            <opcion letra="b">Su poca extensión y su falta de definición de un modelo territorial.</opcion>
-            <opcion letra="c">Su carácter escrito, extenso y rígido en su contenido.</opcion>
-            <opcion letra="d">Su falta de definición del modelo de Estado.</opcion>
-        </opciones>
-        <respuesta_correcta>c</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="12">
-        <texto>La Constitución Española fue ratificada por:</texto>
-        <opciones>
-            <opcion letra="a">La Ley Orgánica de 6-12-1978.</opcion>
-            <opcion letra="b">Las Cortes Generales el 6-12-1978.</opcion>
-            <opcion letra="c">Referéndum del pueblo español el 29-12-1978.</opcion>
-            <opcion letra="d">Referéndum del pueblo español el 6-12-1978.</opcion>
-        </opciones>
-        <respuesta_correcta>d</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="13">
-        <texto>¿Qué es la Constitución?</texto>
-        <opciones>
-            <opcion letra="a">Un escrito con mayúscula.</opcion>
-            <opcion letra="b">Un escrito con las normas del Estado.</opcion>
-            <opcion letra="c">Es el conjunto de normas fundamentales de un Estado soberano, las cuales suelen estar expresadas de forma escrita y fijan los límites y las relaciones entre los poderes del Estado y entre estos y los ciudadanos.</opcion>
-            <opcion letra="d">Un escrito con derechos y deberes para los españoles.</opcion>
-        </opciones>
-        <respuesta_correcta>c</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="14">
-        <texto>La Constitución Española de 1978 consta de:</texto>
-        <opciones>
-            <opcion letra="a">169 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Títulos.</opcion>
-            <opcion letra="b">168 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Capítulos.</opcion>
-            <opcion letra="c">170 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Capítulos.</opcion>
-            <opcion letra="d">169 artículos, y se estructura en un Título Preliminar y 10 Capítulos.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-    
-    <pregunta id="15">
-        <texto>El Título I de la Constitución Española "De los derechos y deberes fundamentales" comprende los artículos:</texto>
-        <opciones>
-            <opcion letra="a">Artículo 10 al 55.</opcion>
-            <opcion letra="b">Artículo 11 al 55.</opcion>
-            <opcion letra="c">Artículo 15 al 29.</opcion>
-            <opcion letra="d">Artículo 1 al 9.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-    
-    <pregunta id="16">
-        <texto>El Título I de la Constitución Española, en su Capítulo II, contiene:</texto>
-        <opciones>
-            <opcion letra="a">Dos Secciones, respectivamente tituladas "De los derechos fundamentales y de las libertades públicas" y "De los derechos y deberes de los ciudadanos".</opcion>
-            <opcion letra="b">Dos Secciones, respectivamente tituladas "De los españoles y los extranjeros" y "De los derechos y deberes de los ciudadanos".</opcion>
-            <opcion letra="c">Tres Secciones, respectivamente tituladas "De los españoles y los extranjeros", "De los derechos y libertades" y "De los deberes de los ciudadanos".</opcion>
-            <opcion letra="d">Un solo artículo, que proclama la igualdad de todos ante la ley.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="17">
-        <texto>La Constitución Española de 1978 (en adelante CE) se compone de:</texto>
-        <opciones>
-            <opcion letra="a">10 títulos, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
-            <opcion letra="b">11 títulos, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
-            <opcion letra="c">1 título preliminar, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
-            <opcion letra="d">11 títulos, 169 artículos, 9 disposiciones adicionales, 4 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="18">
-        <texto>En la Constitución española, los derechos y deberes fundamentales:</texto>
-        <opciones>
-            <opcion letra="a">Están regulados en el Título I, del artículo 10 al 55.</opcion>
-            <opcion letra="b">Están regulados en el Título I, del artículo 14 al 28.</opcion>
-            <opcion letra="c">Están regulados en el Título I, del art. 15 al 29.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="19">
-        <texto>En la Constitución española, los derechos fundamentales y libertades públicas:</texto>
-        <opciones>
-            <opcion letra="a">Están regulados en el Título I, del artículo 10 al 55.</opcion>
-            <opcion letra="b">Están regulados en el Título I, del artículo 14 al 28.</opcion>
-            <opcion letra="c">Están regulados en el Título I, del art. 15 al 29.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="20">
-        <texto>La Constitución Española de 1978 consta de la siguiente estructura:</texto>
-        <opciones>
-            <opcion letra="a">Preámbulo, diez Títulos, cuatro Disposiciones Adicionales, nueve Disposiciones Transitorias, una Disposición Derogatoria, y una Disposición final.</opcion>
-            <opcion letra="b">Once Títulos, cuatro Disposiciones Adicionales, ocho Disposiciones Transitorias, una Disposición Derogatoria y una Disposición Final.</opcion>
-            <opcion letra="c">Preámbulo, once Títulos, cuatro Disposiciones adicionales, nueve Disposiciones transitorias, una Disposición derogatoria y una Disposición final.</opcion>
-            <opcion letra="d">Preámbulo, Título Preliminar, Títulos del I al X, Disposiciones Transitorias (1ª a 9ª), Disposición derogatoria (única) y Disposición final (única).</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="21">
-        <texto>La Constitución Española de 1978 recoge los derechos fundamentales y las libertades públicas en:</texto>
-        <opciones>
-            <opcion letra="a">Título III, Capítulo Primero, Sección 2ª.</opcion>
-            <opcion letra="b">Artículos del 10 al 55 del Título II, Capítulo Segundo.</opcion>
-            <opcion letra="c">Los artículos 15 al 29 del Título I, Capítulo Segundo, Sección 1ª.</opcion>
-            <opcion letra="d">Artículos del 15 al 29 del Título I, Capítulo Primero, Sección 2ª.</opcion>
-        </opciones>
-        <respuesta_correcta>c</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="22">
-        <texto>En qué Título de la Constitución encontramos los Derechos y Deberes Fundamentales:</texto>
-        <opciones>
-            <opcion letra="a">En el Título II, artículos del 10 al 55 de la Constitución.</opcion>
-            <opcion letra="b">En el Título I y consta de cuatro Capítulos.</opcion>
-            <opcion letra="c">En el Título Preliminar.</opcion>
-            <opcion letra="d">Ninguna es correcta.</opcion>
-        </opciones>
-        <respuesta_correcta>b</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="23">
-        <texto>¿En qué parte de la CE se regula la nacionalidad española?</texto>
-        <opciones>
-            <opcion letra="a">En el Título Preliminar.</opcion>
-            <opcion letra="b">En el Preámbulo.</opcion>
-            <opcion letra="c">En el Título Primero.</opcion>
-            <opcion letra="d">En el Título Segundo.</opcion>
-        </opciones>
-        <respuesta_correcta>c</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="24">
-        <texto>¿Qué Título de la Constitución es el que establece las reglas de la reforma constitucional?</texto>
-        <opciones>
-            <opcion letra="a">Décimo.</opcion>
-            <opcion letra="b">Noveno.</opcion>
-            <opcion letra="c">Octavo.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="25">
-        <texto>La estructura de la Constitución española es la siguiente:</texto>
-        <opciones>
-            <opcion letra="a">Un preámbulo, 159 artículos repartidos en un Título Preliminar y otros 10 Títulos más, 5 Disposiciones Adicionales, 8 Disposiciones Transitorias, 1 Disposición Derogatoria y 1 Disposición Final.</opcion>
-            <opcion letra="b">Un preámbulo, 168 artículos, repartidos en un Título Preliminar y otros 10 Títulos más, 4 Disposiciones Adicionales, 8 Disposiciones Transitorias, 1 Disposición Derogatoria y 1 Disposición Final.</opcion>
-            <opcion letra="c">Un preámbulo, 170 artículos, repartidos en un Título Preliminar y otros 10 Títulos más, 4 Disposiciones Adicionales, 8 Disposiciones Transitorias, 1 Disposición Derogatoria y 1 Disposición Final.</opcion>
-            <opcion letra="d">Un preámbulo, 169 artículos, repartidos en un Título Preliminar y otros 10 Títulos más, 4 Disposiciones Adicionales, 9 Disposiciones Transitorias, 1 Disposición Derogatoria y 1 Disposición Final.</opcion>
-        </opciones>
-        <respuesta_correcta>d</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="26">
-        <texto>¿Qué derechos se encuentran regulados en el artículo 16 de la CE?</texto>
-        <opciones>
-            <opcion letra="a">Derecho a la libertad ideológica.</opcion>
-            <opcion letra="b">Derecho a la libertad de expresión.</opcion>
-            <opcion letra="c">Derecho a la libertad de religión.</opcion>
-            <opcion letra="d">Derecho a la libertad de pensamiento y de expresión.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="27">
-        <texto>El artículo 16 de la CE establece:</texto>
-        <opciones>
-            <opcion letra="a">Que se garantiza la libertad ideológica y religiosa de los ciudadanos.</opcion>
-            <opcion letra="b">Que se garantiza el derecho a la educación.</opcion>
-            <opcion letra="c">Que se garantiza el derecho a la vida.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="28">
-        <texto>El artículo 17 de la CE regula:</texto>
-        <opciones>
-            <opcion letra="a">El derecho a la libertad y a la seguridad personal.</opcion>
-            <opcion letra="b">El derecho a la vida y a la libertad.</opcion>
-            <opcion letra="c">El derecho a la libertad de expresión.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="29">
-        <texto>La CE garantiza el derecho a la libertad de expresión en:</texto>
-        <opciones>
-            <opcion letra="a">El artículo 20.</opcion>
-            <opcion letra="b">El artículo 21.</opcion>
-            <opcion letra="c">El artículo 22.</opcion>
-            <opcion letra="d">El artículo 23.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="30">
-        <texto>El artículo 23 de la CE establece:</texto>
-        <opciones>
-            <opcion letra="a">Que todos los ciudadanos tienen el derecho a participar en los asuntos públicos.</opcion>
-            <opcion letra="b">Que todos los ciudadanos tienen derecho a la educación.</opcion>
-            <opcion letra="c">Que todos los ciudadanos tienen derecho a la igualdad ante la ley.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="31">
-        <texto>¿Qué establece el artículo 25 de la CE sobre las penas?</texto>
-        <opciones>
-            <opcion letra="a">Que las penas privativas de libertad tienen carácter rehabilitador.</opcion>
-            <opcion letra="b">Que las penas no pueden ser inhumana o degradantes.</opcion>
-            <opcion letra="c">Que el principio de legalidad penal es básico.</opcion>
-            <opcion letra="d">Todas son correctas.</opcion>
-        </opciones>
-        <respuesta_correcta>d</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="32">
-        <texto>El artículo 26 de la CE establece:</texto>
-        <opciones>
-            <opcion letra="a">Que se prohíben los tribunales de honor.</opcion>
-            <opcion letra="b">Que se prohíben las penas de muerte.</opcion>
-            <opcion letra="c">Que se garantizan los derechos laborales.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="33">
-        <texto>El artículo 27 de la CE establece:</texto>
-        <opciones>
-            <opcion letra="a">Que se garantiza la libertad de enseñanza.</opcion>
-            <opcion letra="b">Que se garantiza el derecho a la educación.</opcion>
-            <opcion letra="c">Que se prohíben las discriminaciones.</opcion>
-        </opciones>
-        <respuesta_correcta>b</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="34">
-        <texto>El artículo 28 de la CE establece:</texto>
-        <opciones>
-            <opcion letra="a">Que se garantiza el derecho de reunión pacífica.</opcion>
-            <opcion letra="b">Que se garantiza el derecho de huelga.</opcion>
-            <opcion letra="c">Que se garantiza el derecho a la participación.</opcion>
-        </opciones>
-        <respuesta_correcta>b</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="35">
-        <texto>El artículo 29 de la CE establece:</texto>
-        <opciones>
-            <opcion letra="a">Que se garantiza el derecho de petición.</opcion>
-            <opcion letra="b">Que se garantiza el derecho de asociación.</opcion>
-            <opcion letra="c">Que se garantiza el derecho a la información.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="36">
-        <texto>El artículo 30 de la CE establece:</texto>
-        <opciones>
-            <opcion letra="a">Que todos los ciudadanos tienen el deber de defender España.</opcion>
-            <opcion letra="b">Que todos los ciudadanos tienen el derecho a la educación.</opcion>
-            <opcion letra="c">Que todos los ciudadanos tienen derecho a la libertad de expresión.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="37">
-        <texto>El artículo 31 de la CE establece:</texto>
-        <opciones>
-            <opcion letra="a">Que todos los ciudadanos tienen derecho a acceder a los cargos públicos.</opcion>
-            <opcion letra="b">Que todos los ciudadanos tienen derecho a la propiedad.</opcion>
-            <opcion letra="c">Que todos los ciudadanos tienen el deber de contribuir al sostenimiento de los gastos públicos.</opcion>
-        </opciones>
-        <respuesta_correcta>c</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="38">
-        <texto>¿Qué artículo de la CE establece el principio de igualdad?</texto>
-        <opciones>
-            <opcion letra="a">Artículo 1.</opcion>
-            <opcion letra="b">Artículo 14.</opcion>
-            <opcion letra="c">Artículo 16.</opcion>
-        </opciones>
-        <respuesta_correcta>b</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="39">
-        <texto>El artículo 40 de la CE establece:</texto>
-        <opciones>
-            <opcion letra="a">Que se garantiza el derecho a la salud.</opcion>
-            <opcion letra="b">Que se garantiza el derecho a la vivienda.</opcion>
-            <opcion letra="c">Que se garantiza el derecho a la educación.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
-
-    <pregunta id="40">
-        <texto>El artículo 41 de la CE establece:</texto>
-        <opciones>
-            <opcion letra="a">Que se garantiza el derecho a una protección social.</opcion>
-            <opcion letra="b">Que se garantiza el derecho a una pensión.</opcion>
-            <opcion letra="c">Que se garantiza el derecho a la asistencia sanitaria.</opcion>
-        </opciones>
-        <respuesta_correcta>a</respuesta_correcta>
-    </pregunta>
+        <correcta>a</correcta>
+    </cuestionario>
+    <cuestionario id="13">
+    <titulo>¿Qué es la Constitución?</titulo>
+    <opciones>
+        <opcion id="a">Un escrito con mayúscula.</opcion>
+        <opcion id="b">Un escrito con las normas del Estado.</opcion>
+        <opcion id="c">Es el conjunto de normas fundamentales de un Estado soberano, las cuales suelen estar expresadas de forma escrita y fijan los límites y las relaciones entre los poderes del Estado y entre estos y los ciudadanos.</opcion>
+        <opcion id="d">Un escrito con derechos y deberes para los españoles.</opcion>
+    </opciones>
+    <correcta>c</correcta>
 </cuestionario>
 
+<cuestionario id="14">
+    <titulo>La Constitución Española de 1978 consta de:</titulo>
+    <opciones>
+        <opcion id="a">169 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Títulos.</opcion>
+        <opcion id="b">168 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Capítulos.</opcion>
+        <opcion id="c">170 artículos, y se estructura en un Preámbulo, un Título Preliminar y 10 Capítulos.</opcion>
+        <opcion id="d">169 artículos, y se estructura en un Título Preliminar y 10 Capítulos.</opcion>
+    </opciones>
+    <correcta>a</correcta>
+</cuestionario>
+
+<cuestionario id="15">
+    <titulo>El Título I de la Constitución Española "De los derechos y deberes fundamentales" comprende los artículos:</titulo>
+    <opciones>
+        <opcion id="a">Artículo 10 al 55.</opcion>
+        <opcion id="b">Artículo 11 al 55.</opcion>
+        <opcion id="c">Artículo 15 al 29.</opcion>
+        <opcion id="d">Artículo 1 al 9.</opcion>
+    </opciones>
+    <correcta>a</correcta>
+</cuestionario>
+
+<cuestionario id="16">
+    <titulo>El Título I de la Constitución Española, en su Capítulo II, contiene:</titulo>
+    <opciones>
+        <opcion id="a">Dos Secciones, respectivamente tituladas "De los derechos fundamentales y de las libertades públicas" y "De los derechos y deberes de los ciudadanos".</opcion>
+        <opcion id="b">Dos Secciones, respectivamente tituladas "De los españoles y los extranjeros" y "De los derechos y deberes de los ciudadanos".</opcion>
+        <opcion id="c">Tres Secciones, respectivamente tituladas "De los españoles y los extranjeros", "De los derechos y libertades" y "De los deberes de los ciudadanos".</opcion>
+        <opcion id="d">Un solo artículo, que proclama la igualdad de todos ante la ley.</opcion>
+    </opciones>
+    <correcta>a</correcta>
+</cuestionario>
+
+<cuestionario id="17">
+    <titulo>La Constitución Española de 1978 (en adelante CE) se compone de:</titulo>
+    <opciones>
+        <opcion id="a">10 títulos, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+        <opcion id="b">11 títulos, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+        <opcion id="c">1 título preliminar, 169 artículos, 4 disposiciones adicionales, 9 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+        <opcion id="d">11 títulos, 169 artículos, 9 disposiciones adicionales, 4 disposiciones transitorias, 1 disposición derogatoria y 1 disposición final.</opcion>
+    </opciones>
+    <correcta>a</correcta>
+</cuestionario>
+
+<cuestionario id="18">
+    <titulo>En la Constitución española, los derechos y deberes fundamentales:</titulo>
+    <opciones>
+        <opcion id="a">Están regulados en el Título I, del artículo 10 al 55.</opcion>
+        <opcion id="b">Están regulados en el Título I, del artículo 14 al 28.</opcion>
+        <opcion id="c">Están regulados en el Título I, del art. 15 al 29.</opcion>
+    </opciones>
+    <correcta>a</correcta>
+</cuestionario>
+
+<cuestionario id="19">
+    <titulo>En la Constitución española, los derechos fundamentales y libertades públicas:</titulo>
+    <opciones>
+        <opcion id="a">Están regulados en el Título I, del artículo 10 al 55.</opcion>
+        <opcion id="b">Están regulados en el Título I, del artículo 14 al 28.</opcion>
+        <opcion id="c">Están regulados en el Título I, del art. 15 al 29.</opcion>
+    </opciones>
+    <correcta>a</correcta>
+</cuestionario>
+
+<cuestionario id="20">
+    <titulo>La Constitución Española de 1978 consta de la siguiente estructura:</titulo>
+    <opciones>
+        <opcion id="a">Preámbulo, diez Títulos, cuatro Disposiciones Adicionales, nueve Disposiciones Transitorias, una Disposición Derogatoria, y una Disposición final.</opcion>
+        <opcion id="b">Once Títulos, cuatro Disposiciones Adicionales, ocho Disposiciones Transitorias, una Disposición Derogatoria y una Disposición Final.</opcion>
+        <opcion id="c">Preámbulo, once Títulos, cuatro Disposiciones adicionales, nueve Disposiciones transitorias, una Disposición derogatoria y una Disposición final.</opcion>
+        <opcion id="d">Preámbulo, Título Preliminar, Títulos del I al X, Disposiciones Transitorias (1ª a 9ª), Disposición derogatoria (única) y Disposición final (única).</opcion>
+    </opciones>
+    <correcta>a</correcta>
+</cuestionario>
+
+<cuestionario id="21">
+    <titulo>En qué Título de la Constitución encontramos los Derechos y Deberes Fundamentales:</titulo>
+    <opciones>
+        <opcion id="a">En el Título II, artículos del 10 al 55 de la Constitución.</opcion>
+        <opcion id="b">En el Título I y consta de cuatro Capítulos.</opcion>
+        <opcion id="c">En el Título Preliminar.</opcion>
+        <opcion id="d">Ninguna es correcta.</opcion>
+    </opciones>
+    <correcta>b</correcta>
+</cuestionario>
+
+<cuestionario id="22">
+    <titulo>¿En qué parte de la CE se regula la nacionalidad española?:</titulo>
+    <opciones>
+        <opcion id="a">En el Título Preliminar.</opcion>
+        <opcion id="b">En el Preámbulo.</opcion>
+        <opcion id="c">En el Título Primero.</opcion>
+        <opcion id="d">En el Título Segundo.</opcion>
+    </opciones>
+    <correcta>c</correcta>
+</cuestionario>
+
+<cuestionario id="23">
+    <titulo>¿Qué Título de la Constitución es el que establece las reglas de la reforma constitucional?</titulo>
+    <opciones>
+        <opcion id="a">Décimo.</opcion>
+        <opcion id="b">Noveno.</opcion>
+        <opcion id="c">Octavo.</opcion>
+    </opciones>
+    <correcta>a</correcta>
+</cuestionario>
+
+<cuestionario id="24">
+    <titulo>La estructura de la Constitución española es la siguiente:</titulo>
+    <opciones>
+        <opcion id="a">Un preámbulo, 159 artículos repartidos en un Título Preliminar y otros 10 Títulos más, 5 Disposiciones Adicionales, 8 Disposiciones Transitorias, 1 Disposición Derogatoria y 1 Disposición Final.</opcion>
+        <opcion id="b">Un preámbulo, 168 artículos, repartidos en un Título Preliminar y otros 10 Títulos más, 4 Disposiciones Adicionales, 8 Disposiciones Transitorias, 1 Disposición Derogatoria y 1 Disposición Final.</opcion>
+        <opcion id="c">Un preámbulo, 169 artículos repartidos en un Título Preliminar y otros 10 Títulos más, 5 Disposiciones Adicionales, 8 Disposiciones Transitorias, 1 Disposición Derogatoria y 1 Disposición Final.</opcion>
+    </opciones>
+    <correcta>a</correcta>
+</cuestionario>
+
+<cuestionario id="25">
+    <titulo>¿Quién tiene la capacidad de modificar la Constitución Española?</titulo>
+    <opciones>
+        <opcion id="a">El Gobierno Español.</opcion>
+        <opcion id="b">Las Cortes Generales.</opcion>
+        <opcion id="c">Los ciudadanos españoles.</opcion>
+    </opciones>
+    <correcta>b</correcta>
+</cuestionarios>
