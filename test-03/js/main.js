@@ -91,11 +91,9 @@
 // cargarPreguntas();
 
 
-
-
 // main.js
 document.addEventListener("DOMContentLoaded", () => {
-    const cuestionariosContainer = document.getElementById("cuestionarios");
+    const cuestionariosContainer = document.getElementById("quiz"); // Cambiado a 'quiz'
     
     // Verificar si el contenedor existe
     if (!cuestionariosContainer) {
@@ -105,12 +103,17 @@ document.addEventListener("DOMContentLoaded", () => {
         
     // Cargar preguntas desde el archivo JSON
     fetch("data.json")
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Error al cargar el archivo JSON: " + response.statusText);
+            }
+            return response.json();
+        })
         .then(data => {
             const cuestionarios = data.cuestionarios;
             cuestionarios.forEach(cuestionario => {
                 const cuestionarioElement = document.createElement("div");
-                cuestionarioElement.classList.add("cuestionario");
+                cuestionarioElement.classList.add("cuestionario", "mb-4");
 
                 const tituloElement = document.createElement("h2");
                 tituloElement.textContent = cuestionario.titulo;
@@ -121,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 cuestionario.opciones.opcion.forEach(opcion => {
                     const opcionElement = document.createElement("div");
                     opcionElement.classList.add("opcion");
-                    
+
                     const inputElement = document.createElement("input");
                     inputElement.type = "radio";
                     inputElement.name = cuestionario.titulo; // Agrupar opciones por título
