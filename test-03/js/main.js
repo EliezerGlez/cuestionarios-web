@@ -90,7 +90,6 @@
 // // Inicializa el cuestionario
 // cargarPreguntas();
 
-
 // main.js
 document.addEventListener("DOMContentLoaded", () => {
     const cuestionariosContainer = document.getElementById("quiz"); // Cambiado a 'quiz'
@@ -146,3 +145,48 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error al cargar el archivo JSON:", error);
         });
 });
+
+// Función para verificar las respuestas
+function checkAnswers() {
+    const cuestionariosContainer = document.getElementById("quiz");
+    const resultados = [];
+
+    // Obtener todos los cuestionarios
+    const cuestionarios = cuestionariosContainer.getElementsByClassName("cuestionario");
+    
+    Array.from(cuestionarios).forEach(cuestionario => {
+        const titulo = cuestionario.querySelector("h2").textContent; // Obtener el título
+        const opciones = cuestionario.querySelectorAll("input[type='radio']");
+        
+        let respuestaSeleccionada = null;
+        opciones.forEach(opcion => {
+            if (opcion.checked) {
+                respuestaSeleccionada = opcion.value;
+            }
+        });
+
+        // Si hay una respuesta seleccionada, compararla con la correcta
+        if (respuestaSeleccionada) {
+            const correcta = cuestionario.dataset.correcta; // Asumiendo que has agregado un atributo 'data-correcta' a cada cuestionario
+            if (respuestaSeleccionada === correcta) {
+                resultados.push({ titulo, correcto: true });
+            } else {
+                resultados.push({ titulo, correcto: false });
+            }
+        }
+    });
+
+    mostrarResultados(resultados);
+}
+
+// Función para mostrar resultados
+function mostrarResultados(resultados) {
+    const resultadoContainer = document.getElementById("resultado");
+    resultadoContainer.innerHTML = ""; // Limpiar resultados anteriores
+
+    resultados.forEach(resultado => {
+        const div = document.createElement("div");
+        div.textContent = `${resultado.titulo}: ${resultado.correcto ? "Correcto" : "Incorrecto"}`;
+        resultadoContainer.appendChild(div);
+    });
+}
